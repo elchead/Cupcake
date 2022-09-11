@@ -6,13 +6,17 @@ from cup import *
 def test_cupcakename():
     item = Cupcake()
 
-    assert cupcakename(item) == "🧁"
+    assert str(item) == "🧁"
 
-def test_chocolate():
-    item = Chocolate()
+# def test_chocolate():
+#     item = Chocolate()
 
-    assert cupcakename(str(item)) == "🍫"
+#     assert cupcakename(item) == "🍫"
 
 def test_cupcakewithchocolate():
 
-    assert cupcakename(Chocolate(Cupcake())) == "🧁 with 🍫"
+    assert str(Chocolate(Cupcake())) == "🧁 with 🍫"
+
+# def test_cupcakewithchocandpean():
+
+#     assert cupcakename(Peanuts(Chocolate(Cupcake()))) == "🧁 with 🍫 and 🥜"
