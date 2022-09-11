@@ -13,10 +13,5 @@ def test_cupcakename():
 
 #     assert cupcakename(item) == "🍫"
 
-def test_cupcakewithchocolate():
-
-    assert str(Chocolate(Cupcake())) == "🧁 with 🍫"
-
-# def test_cupcakewithchocandpean():
-
-#     assert cupcakename(Peanuts(Chocolate(Cupcake()))) == "🧁 with 🍫 and 🥜"
+def test_cupcake_with_chocolate_and_peanuts():
+    assert str(Peanuts(Chocolate(Cupcake()))) == "🧁 with 🍫 with 🥜"
